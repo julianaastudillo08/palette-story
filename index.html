@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Palette Story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="glow"></div>
+  <header>
+    <p class="label">Color storytelling</p>
+    <h1>Palette Story</h1>
+    <p class="lead">Five brand hues → contrast pairs, CSS tokens, live UI mock.</p>
+  </header>
+
+  <main class="grid">
+    <section class="card picks">
+      <h2>Brand palette</h2>
+      <div id="swatches" class="swatches"></div>
+      <button type="button" id="btn-random">Surprise palette</button>
+    </section>
+
+    <section class="card contrast">
+      <h2>Accessibility pairs</h2>
+      <ul id="pairs" class="pairs"></ul>
+    </section>
+
+    <section class="card export">
+      <h2>CSS variables</h2>
+      <pre id="css-out" class="code"></pre>
+      <button type="button" id="btn-copy">Copy CSS</button>
+    </section>
+
+    <section class="card preview">
+      <h2>Mock UI</h2>
+      <div id="mock" class="mock">
+        <nav class="mock-nav"><span>Studio</span><a href="#">Work</a><a href="#">Contact</a></nav>
+        <div class="mock-card">
+          <h3>Launch capsule</h3>
+          <p>Your palette drives buttons, surfaces, and navigation.</p>
+          <button type="button" class="mock-btn">Primary action</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Crafted by <strong>Juliana Chantre Astudillo</strong></footer>
+  <script src="app.js"></script>
+</body>
+</html>
